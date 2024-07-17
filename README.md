@@ -26,13 +26,19 @@ ESP8266WiFi.h
 WiFiClientSecure.h
 ```
 4.	Use code “envdev.ino” as your base code for the device
-a.	This device is made to connect to a university wireless network, but change the SSID and password to auto connect to your wireless network.
+   a.	This device is made to connect to a university wireless network, but change the SSID and password to auto connect to your wireless network.
+  	b. For university application, make sure to register the device's MAC address so it could connect to the WiFi properly
+
 
 On the google sheets end:
 1.	Go in and edit the file used to connect to the excel sheet
 2.	In google sheets, go to extensions, then app scripts
-3.	From there, use the “google sheets code” and add it on there
-a.	For the google ID, replace the ** “xxxxxxxxxxxxxxxxxxxxxxx” ** with the proper link to google sheets
-4.	Label the columns! 
+  a. grab the URL, https://docs.google.com/spreadsheets/d/**xxxxxxxxxxxxxxxxxxxxxxxxxxxx**/edit?gid=0#gid=0, and add it to the app script code
+  	(only the bolded portion which is the sheet ID)
+5. Press deployment, make sure to allow access for everyone (which allows device to communicate with the google sheets), and copy the deployment ID
+6.	From there, use the deplayment ID and add it onto the string GAS_ID located on the arduino code (make sure to include the " " ; for it to be a string!)
+   a. For the string GAS_ID on arduino code, replace the ** “xxxxxxxxxxxxxxxxxxxxxxx” ** with the proper link to google sheets deployment
+7.	Label the columns!
+
 You are done!
 
