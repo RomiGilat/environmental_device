@@ -42,3 +42,7 @@ On the google sheets end:
 
 You are done!
 
+Here are some fun facts:
+1. Even at a collection rate of 5 seconds, a year's worth of data is about ~0.1 GB
+2. Data can be collected at up to 10 Hz
+
