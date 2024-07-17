@@ -33,7 +33,7 @@ WiFiClientSecure.h
 On the google sheets end:
 1.	Go in and edit the file used to connect to the excel sheet
 2.	In google sheets, go to extensions, then app scripts
-3.	grab the URL, https://docs.google.com/spreadsheets/d/xxxxxxxxxxxxxxxxxxxxxxxxxxxx/edit?gid=0#gid=0, and add it to the app script code
+3.	grab the URL, ~https://docs.google.com/spreadsheets/d/~**xxxxxxxxxxxxxxxxxxxxxxxxxxxx**~/edit?gid=0#gid=0~, and add it to the app script code
   	(only the bolded portion which is the sheet ID)
 5. Press deployment, make sure to allow access for everyone (which allows device to communicate with the google sheets), and copy the deployment ID
 6.	From there, use the deplayment ID and add it onto the string GAS_ID located on the arduino code (make sure to include the " " ; for it to be a string!)
