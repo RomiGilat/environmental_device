@@ -1,0 +1,2 @@
+(* These are the PCB files for this device
+power output shares from the ESP -> BME, and is connected through USB micro *)
