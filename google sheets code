@@ -14,7 +14,7 @@ function doGet(e) {
     var rowData = [];
     var Curr_Date = new Date();
     rowData[0] = Curr_Date; // Date in column A
-    var Curr_Time = Utilities.formatDate(Curr_Date, "Asia/Bangkok", 'HH:mm:ss');
+    var Curr_Time = Utilities.formatDate(Curr_Date, "America/Los_Angeles", 'HH:mm:ss');
     rowData[1] = Curr_Time; // Time in column B
     for (var param in e.parameter) {
       Logger.log('In for loop, param=' + param);
