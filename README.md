@@ -28,9 +28,9 @@ ESP8266HTTPClient.h
 ESP8266WiFi.h
 WiFiClientSecure.h
 ```
-this is done on the left hand side under library manager (third icon down)
 ![WhatsApp Image 2024-08-02 at 12 06 58_2e432e32](https://github.com/user-attachments/assets/92f0d9d1-0f62-4486-9241-c4761cfafb49)
 
+This is done on the left hand side under library manager (third icon down)
 
 4.	Use code “envdev.ino” as your base code for the device
 5.	This device is made to connect to a university wireless network, but change the SSID and password to auto connect to your wireless network.
@@ -44,14 +44,36 @@ this is done on the left hand side under library manager (third icon down)
 
 
 On the google sheets end:
-1.	Go in and edit the file used to connect to the excel sheet
+1.	Create a google sheet.
 2.	In google sheets, go to extensions, then app scripts
-3.	grab the URL, ~https:/docs.google.com/spreadsheets/d/~ **xxxxxxxxxxxxxxxxxxxxxxxxxxxx** ~/edit?gid=0#gid=0~, and add it to the app script code
+![image](https://github.com/user-attachments/assets/ee957fb9-7be5-4a08-a320-68289d0ab729)
+
+
+3. Drop in code XXX
+4.	grab the URL, ~https:/docs.google.com/spreadsheets/d/~ **xxxxxxxxxxxxxxxxxxxxxxxxxxxx** ~/edit?gid=0#gid=0~, and add it to the app script code
   	(X portion which is the sheet ID)
-5. Press deployment, make sure to allow access for everyone (which allows device to communicate with the google sheets), and copy the deployment ID
-6.	From there, use the deplayment ID and add it onto the string GAS_ID located on the arduino code (make sure to include the " " ; for it to be a string!)
-7.	For the string GAS_ID on arduino code, replace the **“xxxxxxxxxxxxxxxxxxxxxxx”** with the proper link to google sheets deployment
-8.	Label the columns!
+![image](https://github.com/user-attachments/assets/00c14c7d-93a4-43d2-8ded-05a7310086b8)
+![image](https://github.com/user-attachments/assets/8d036412-1de7-43d6-858f-71aabcc260d9)
+
+6. Press deploy, then new deployment.
+7. Select "Web App" under the setting wheel
+8. make sure to allow access for everyone (which allows device to communicate with the google sheets),
+
+![image](https://github.com/user-attachments/assets/211266a7-6d3e-42f5-af01-7a21126fb7f4)
+
+9. copy the deployment ID
+
+![image](https://github.com/user-attachments/assets/07077af5-5420-4f11-bb87-231e2b94f4cf)
+
+10.	From there, use the deployment ID and add it onto the string GAS_ID located on the arduino code (make sure to include the " " ; for it to be a string!)
+11.	For the string GAS_ID on arduino code, replace the **“xxxxxxxxxxxxxxxxxxxxxxx”** with the proper link to google sheets deployment
+![WhatsApp Image 2024-08-02 at 12 22 33_8c0e9d80](https://github.com/user-attachments/assets/759b48f1-1dc6-4b6b-9762-08321984366f)
+
+12.   upload the file to the ESP8266 (the arrow on top left)
+![WhatsApp Image 2024-08-02 at 12 23 50_7fac60d6](https://github.com/user-attachments/assets/5c32df10-2090-4c98-a2d6-c6e173ee36a9)
+
+it should look something like this as its uploading
+13.	Label the columns!
 
 You are done!
 
