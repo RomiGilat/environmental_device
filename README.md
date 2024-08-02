@@ -15,7 +15,10 @@ D2   ->    SDI
 ```
 
 1.	Download Arduino IDE
-2.	Add libraries:
+2.	connect the deive to comm (in this case its comm4)
+![WhatsApp Image 2024-08-02 at 12 06 38_576728f1](https://github.com/user-attachments/assets/e3873494-78b5-410d-878f-b5280c679fea)
+
+3.	Add libraries:
    ```
 Wire.h
 Adafruit_Sensor.h
