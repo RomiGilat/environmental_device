@@ -28,9 +28,19 @@ ESP8266HTTPClient.h
 ESP8266WiFi.h
 WiFiClientSecure.h
 ```
+this is done on the left hand side under library manager (third icon down)
+![WhatsApp Image 2024-08-02 at 12 06 58_2e432e32](https://github.com/user-attachments/assets/92f0d9d1-0f62-4486-9241-c4761cfafb49)
+
+
 4.	Use code “envdev.ino” as your base code for the device
 5.	This device is made to connect to a university wireless network, but change the SSID and password to auto connect to your wireless network.
 6.	For university application, make sure to register the device's MAC address so it could connect to the WiFi properly
+   this is done in https://uarizona.service-now.com/sp?id=sc_cat_item&sys_id=61ecd86a1b1970107947edf1604bcb13
+   ![image](https://github.com/user-attachments/assets/73b56c6d-d35e-4fd1-a94f-c14b3e856aa0)
+
+**This needs to be completed every 6 months to allow the ESP8266 to it to connect to UAGuest wifi**
+
+
 
 
 On the google sheets end:
