@@ -49,7 +49,7 @@ On the google sheets end:
 ![image](https://github.com/user-attachments/assets/ee957fb9-7be5-4a08-a320-68289d0ab729)
 
 
-3. Drop in code XXX
+3. Drop in code "google sheets code" into the deployment code zone
 4.	grab the URL, ~https:/docs.google.com/spreadsheets/d/~ **xxxxxxxxxxxxxxxxxxxxxxxxxxxx** ~/edit?gid=0#gid=0~, and add it to the app script code
   	(X portion which is the sheet ID)
 ![image](https://github.com/user-attachments/assets/00c14c7d-93a4-43d2-8ded-05a7310086b8)
